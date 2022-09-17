@@ -20,7 +20,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compiling and building'
-                sh 'ls -la'
                 sh 'go mod init github.com/brydeio/gopoc'
                 sh 'go mod tidy'
                 sh 'go build'
